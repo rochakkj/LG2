@@ -6,7 +6,7 @@ Giovanni Zorzetto Oliveira @Gizetto61
 Giovanni Foliene Luciano @Trifaw  
 
 ### Matéria e professor:
-Professor: Ugo Henrique Pereira da Silva.
+Professor: Ugo Henrique Pereira da Silva.  
 Matéria: Lógica 2 (LG2).
 ### Turma:  
 213-A.  
