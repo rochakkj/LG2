@@ -1,4 +1,4 @@
-# Projeto-PregãoAções
+# 💰:Projeto-PregãoAções
 Professor: Ugo Henrique Pereira da Silva.  
 Matéria: Lógica 2 (LG2).  
 Turma: 213-A.  
