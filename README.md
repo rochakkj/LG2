@@ -11,6 +11,12 @@ Giovanni Foliene Luciano @Trifaw
 PregãoGGG.  
 ## 📖Linguagem e programas uitilizados:  
 Java, utilizando IntelliJ IDEA.
+<div style="display: flex; justify-content: center; align-items: center;">
+
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
+
+</div>
 
 ## 🚲Andamento do projeto:  
 ### Divisão alunos/branch:  
