@@ -2,67 +2,16 @@ package Entidades;
 
 public class Ativos
 {
-    private String Id;
-    private String Nome;
-    private double Valor;
-    private String Tipo;
+    private Acao acao;
 
-    public Ativos(String id, String nome, double valor, String tipo)
+    public Ativos(Acao acao)
     {
-        Id = id;
-        Nome = nome;
-        Valor = valor;
-        Tipo = tipo;
+        this.acao = acao;
     }
 
-    public String getId()
+    public static void criarAtivos()
     {
-        return Id;
-    }
-
-    public void setId(String id)
-    {
-        Id = id;
-    }
-
-    public String getNome()
-    {
-        return Nome;
-    }
-
-    public void setNome(String nome)
-    {
-        Nome = nome;
-    }
-
-    public double getValor()
-    {
-        return Valor;
-    }
-
-    public void setValor(double valor)
-    {
-        Valor = valor;
-    }
-
-    public String getTipo()
-    {
-        return Tipo;
-    }
-
-    public void setTipo(String tipo)
-    {
-        Tipo = tipo;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "Ativos{" +
-                "Id='" + Id + '\'' +
-                ", Nome='" + Nome + '\'' +
-                ", Valor=" + Valor +
-                ", Tipo='" + Tipo + '\'' +
-                '}';
+        Ativos ativos = new Ativos(null);
+        System.out.println(ativos);
     }
 }

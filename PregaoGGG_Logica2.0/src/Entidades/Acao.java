@@ -8,15 +8,12 @@ public class Acao
     private String Codigo;
     private String Nome;
     private double Valor;
-    private double Dividendos;
-    private static List<Acao> Disponiveis = new ArrayList<>();
 
-    public Acao(String codigo, String nome, double valor, double dividendos)
+    public Acao(String codigo, String nome, double valor)
     {
         Codigo = codigo;
         Nome = nome;
         Valor = valor;
-        Dividendos = dividendos;
     }
 
     public String getCodigo()
@@ -49,25 +46,6 @@ public class Acao
         Valor = valor;
     }
 
-    public double getDividendos()
-    {
-        return Dividendos;
-    }
-
-    public void setDividendos(double dividendos)
-    {
-        Dividendos = dividendos;
-    }
-
-    public List<Acao> getDisponiveis()
-    {
-        return Disponiveis;
-    }
-
-    public void setDisponiveis(List<Acao> disponiveis)
-    {
-        Disponiveis = disponiveis;
-    }
 
     @Override
     public String toString()
@@ -76,8 +54,30 @@ public class Acao
                 "Codigo='" + Codigo + '\'' +
                 ", Nome='" + Nome + '\'' +
                 ", Valor='" + Valor + '\'' +
-                ", Dividendos=" + Dividendos +
-                ", Disponiveis=" + Disponiveis +
                 '}';
+    }
+
+    public static void exibirAcao()
+    {
+        Acao acao1 = new Acao("ABEV3", "Ambev", 18.61);
+        Acao acao2 = new Acao("BBAS3", "Banco do Brasil", 40.11);
+        Acao acao3 = new Acao("CRFB3", "Carrefour", 26.86);
+        Acao acao4 = new Acao("ELET6", "Eletrobras", 43.02);
+        Acao acao5 = new Acao("NTCO3", "Natura & Co.", 34.25);
+        Acao acao6 = new Acao("ITUB4", "Itaú", 28.71);
+        Acao acao7 = new Acao("LREN3", "Lojas Renner", 51.98);
+        Acao acao8 = new Acao("PETR3", "Petrobras", 29.12);
+        Acao acao9 = new Acao("RADL3", "RaiaDrogasil", 24.98);
+
+        System.out.println("Essas são as Ações disponíveis:");
+        System.out.println("1 " + acao1);
+        System.out.println("2 " + acao2);
+        System.out.println("3 " + acao3);
+        System.out.println("4 " + acao4);
+        System.out.println("5 " + acao5);
+        System.out.println("6 " + acao6);
+        System.out.println("7 " + acao7);
+        System.out.println("8 " + acao8);
+        System.out.println("9 " + acao9);
     }
 }

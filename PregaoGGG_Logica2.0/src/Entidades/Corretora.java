@@ -1,18 +1,16 @@
 package Entidades;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Corretora
 {
     private String Nome;
     private String Endereco;
-    private double Corretagem;
-    private static List<Corretora> Disponiveis = new ArrayList<>();
+    private double ValorCorretagem;
 
-    public Corretora(String nome, String endereco) {
+    public Corretora(String nome, String endereco, double valorCorretagem)
+    {
         Nome = nome;
         Endereco = endereco;
+        ValorCorretagem = valorCorretagem;
     }
 
     public String getNome()
@@ -35,24 +33,14 @@ public class Corretora
         Endereco = endereco;
     }
 
-    public double getCorretagem()
+    public double getValorCorretagem()
     {
-        return Corretagem;
+        return ValorCorretagem;
     }
 
-    public void setCorretagem(double corretagem)
+    public void setValorCorretagem(double valorCorretagem)
     {
-        Corretagem = corretagem;
-    }
-
-    public List<Corretora> getDisponiveis()
-    {
-        return Disponiveis;
-    }
-
-    public void setDisponiveis(List<Corretora> disponiveis)
-    {
-        Disponiveis = disponiveis;
+        ValorCorretagem = valorCorretagem;
     }
 
     @Override
@@ -61,8 +49,23 @@ public class Corretora
         return "Corretora{" +
                 "Nome='" + Nome + '\'' +
                 ", Endereco='" + Endereco + '\'' +
-                ", Corretagem=" + Corretagem +
-                ", Disponiveis=" + Disponiveis +
+                ", Corretagem=" + ValorCorretagem +
                 '}';
+    }
+
+    public static void exibirCorretoras(String nome, String endereco, Double valorCorretagem)
+    {
+        Corretora corretora1 = new Corretora("BTG", "R. Clodomiro Amazonas, 249",40.0);
+        Corretora corretora2 = new Corretora("Safra", "Av. Paulista, 2100",30.0);
+        Corretora corretora3 = new Corretora("Toro Investimentos", "R. Cincinato Braga, 340",0.0);
+        Corretora corretora4 = new Corretora("Rico", "Av. Chedid Jafet, 75",0.0);
+        Corretora corretora5 = new Corretora("Nu Invest", "Av. Manuel Bandeira, 360",0.0);
+
+        System.out.println("Essas são as Corretoras disponíveis:");
+        System.out.println(corretora1);
+        System.out.println(corretora2);
+        System.out.println(corretora3);
+        System.out.println(corretora4);
+        System.out.println(corretora5);
     }
 }
